@@ -78,3 +78,8 @@ nav ul :hover {
     color: white;
   }
 }
+/* hero */
+hero {
+  display: flex;
+  margin-left: 135px;
+}
