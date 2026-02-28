@@ -222,12 +222,12 @@ about {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 12px;
   grid-row-gap: 12px;
 
-  max-width: 100%;
+  max-width: 32%;
   max-height: 100%;
 }
 .grid img {
@@ -244,9 +244,11 @@ about {
   grid-area: 1 / 2 / 3 / 3;
 }
 .teks-about {
+  line-height: 1.5;
   margin: 22.5px 32px;
-
   font-family: "Roboto", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .teks-about h1 {
   font-weight: 200;
@@ -255,5 +257,18 @@ about {
 
 .teks-about h1 span {
   font-weight: 700;
+}
+.teks-about p {
+  font-size: 16px;
+  font-weight: 150;
+}
+.teks-about a {
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  letter-spacing: 0.1em;
+  box-sizing: border-box;
+  background-color: #333333;
+  padding: 22px 40px;
 }
 /* tr */
