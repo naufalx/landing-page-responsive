@@ -40,7 +40,7 @@ nav ul :hover {
 .hamburger {
   display: none;
 }
-/* responsif */
+/* navbar responsif */
 @media screen and (max-width: 1024px) {
   .hamburger {
     display: flex;
@@ -127,7 +127,7 @@ hero {
   height: 670px;
 }
 /* RESPONSIF HERO */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   hero {
     display: flex;
     flex-direction: column-reverse;
@@ -139,7 +139,8 @@ hero {
     display: flex;
     justify-self: left;
     width: 100%;
-    height: 50%;
+    height: 75%;
+    aspect-ratio: 2;
   }
   .teks-hero h1 {
     display: flex;
@@ -186,11 +187,6 @@ hero {
     height: 200px;
   }
   .teks-hero h1 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 16px;
-    font-size: 32px;
-    justify-items: left;
   }
   .teks-hero h2 {
     margin-top: 16px;
@@ -217,16 +213,22 @@ hero {
 }
 
 /* about */
+about {
+  display: flex;
+  margin: 80px 135px;
+  padding: 30px 70px;
+  background-color: #e6e6e6;
+}
+
 .grid {
   display: grid;
-  margin: 135px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
 
   max-width: 100%;
-  max-height: 395px;
+  max-height: 100%;
 }
 .grid img {
   width: 100%;
@@ -240,5 +242,18 @@ hero {
 }
 .div3 {
   grid-area: 1 / 2 / 3 / 3;
+}
+.teks-about {
+  margin: 22.5px 32px;
+
+  font-family: "Roboto", sans-serif;
+}
+.teks-about h1 {
+  font-weight: 200;
+  font-size: 64px;
+}
+
+.teks-about h1 span {
+  font-weight: 700;
 }
 /* tr */
