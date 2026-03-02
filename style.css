@@ -113,12 +113,12 @@ hero {
 }
 .button a {
   font-family: "Roboto", sans-serif;
-  border: 1px solid black;
+  border: 1px solid #333333;
   padding: 16px 40px;
   margin-top: 16px;
   text-decoration: none;
   color: white;
-  background-color: black;
+  background-color: #333333;
   font-weight: 300;
 }
 .img-hero img {
@@ -161,13 +161,13 @@ hero {
 
   .button a {
     font-family: "Roboto", sans-serif;
-    border: 1px solid black;
+    border: 1px solid #333333;
     padding: 16px 4px;
     letter-spacing: 8px;
 
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: #333333;
     font-weight: 300;
     font-size: 11px;
   }
@@ -187,6 +187,7 @@ hero {
     height: 200px;
   }
   .teks-hero h1 {
+    gap: 10px;
   }
   .teks-hero h2 {
     margin-top: 16px;
@@ -200,13 +201,13 @@ hero {
 
   .button a {
     font-family: "Roboto", sans-serif;
-    border: 1px solid black;
+    border: 1px solid #333333;
     padding: 16px 4px;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
 
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: #333333;
     font-weight: 300;
     font-size: 11px;
   }
@@ -215,7 +216,7 @@ hero {
 /* about */
 about {
   display: flex;
-  margin: 80px 135px;
+  margin: 80px 135px 0px 135px;
   padding: 30px 70px;
   background-color: #e6e6e6;
 }
@@ -223,12 +224,12 @@ about {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+  width: 245%;
+  max-width: 1170px; /* ubah sesuai kebutuhan */
+
   grid-column-gap: 12px;
   grid-row-gap: 12px;
-
-  max-width: 32%;
-  max-height: 100%;
 }
 .grid img {
   width: 100%;
@@ -244,7 +245,7 @@ about {
   grid-area: 1 / 2 / 3 / 3;
 }
 .teks-about {
-  line-height: 1.5;
+  line-height: 2;
   margin: 22.5px 32px;
   font-family: "Roboto", sans-serif;
   text-align: justify;
@@ -261,6 +262,8 @@ about {
 .teks-about p {
   font-size: 16px;
   font-weight: 150;
+
+  line-height: 1.5;
 }
 .teks-about a {
   text-decoration: none;
