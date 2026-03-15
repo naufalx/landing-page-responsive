@@ -366,7 +366,48 @@ mision span {
   font-size: 22px;
   padding: 10px;
 }
-
-.span2 {
+.misi_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.misi_2 {
   padding-left: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* responsif mission */
+@media screen and (max-width: 1100px) {
+  mision {
+    width: 288px;
+    height: 188px;
+  }
+  mision h1 {
+    margin: 32px 16px 32px 16px;
+    font-size: 32px;
+  }
+  .isi-mision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 32px 16px 32px 16px;
+  }
+  .misi_1 span {
+    font-size: 64px;
+  }
+
+  .isi-mision .misi_1 p {
+    font-size: 11px;
+  }
+  .misi_2 {
+    padding: 0;
+  }
+  .misi_2 span {
+    font-size: 64px;
+  }
+
+  .isi-mision .misi_2 p {
+    font-size: 11px;
+  }
 }
