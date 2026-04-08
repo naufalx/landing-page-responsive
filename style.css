@@ -585,8 +585,10 @@ mision span {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
+  grid-column-gap: 30px;
   grid-row-gap: 0px;
+
+  margin-right: 135px;
 }
 
 .nama {
@@ -620,18 +622,76 @@ textarea {
   line-height: 3;
   padding-left: 10px;
 }
-.div6 {
-  grid-area: 7 / 1 / 8 / 2;
+.tombol a {
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  letter-spacing: 0.1em;
+  box-sizing: border-box;
+  background-color: #333333;
+  padding: 22px 40px;
 }
-.div7 {
+.tombol {
+  grid-area: 7 / 1 / 8 / 2;
+  margin-top: 22px;
+}
+.lokasi {
   grid-area: 1 / 2 / 7 / 5;
 }
-.div8 {
+.lokasi iframe {
+  margin-right: 135px;
+  width: 850px;
+  height: 369px;
+}
+.alamat {
   grid-area: 7 / 2 / 8 / 3;
+  line-height: 0.9;
+  margin-top: 10px;
+  width: 280px;
 }
-.div9 {
+.alamat h1 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+}
+.alamat h1 span {
+  font-size: 16px;
+
+  word-spacing: 1px;
+}
+.alamat_email {
   grid-area: 7 / 3 / 8 / 4;
+  line-height: 0.9;
+  margin-top: 10px;
+  width: 280px;
+  word-spacing: 5px;
 }
-.div10 {
+.alamat_email h1 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+}
+.alamat_email h1 span {
+  font-size: 16px;
+}
+
+.nomer {
   grid-area: 7 / 4 / 8 / 5;
+  line-height: 0.9;
+  margin-top: 10px;
+  width: 280px;
+  word-spacing: 5px;
+}
+.nomer h1 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+}
+.nomer h1 span {
+  font-size: 16px;
+}
+.bawah_maps {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
 }
