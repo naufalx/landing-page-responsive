@@ -126,6 +126,7 @@ hero {
   color: white;
   background-color: #333333;
   font-weight: 300;
+  font-size: 12px;
 }
 .img-hero img {
   display: flex;
@@ -495,7 +496,9 @@ mision span {
   text-justify: inter-word;
   justify-content: space-between;
 }
-
+.isi_project P {
+  font-size: 22px;
+}
 .button_our {
   max-height: 56px;
 }
@@ -714,8 +717,9 @@ textarea {
 /* responsif contact */
 @media screen and (max-width: 1100px) {
   .contact {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 16px;
+    max-width: 1100px;
+    width: 100%;
   }
   .text_contact h1 {
     font-weight: 200;
@@ -725,16 +729,21 @@ textarea {
   .text_contact h1 span {
     font-weight: 700;
   }
+  .lokasi {
+    width: 100%;
+    margin-right: 16px;
+  }
   .lokasi iframe {
     margin-right: 16px;
-    width: 425px;
+    width: 100%;
     height: 100%;
   }
   .bawah_maps {
     display: none;
+    width: 100%;
   }
   textarea {
-    width: 400px;
+    width: 100%;
     border: none;
     background: #d3d3d3;
     height: 46px;
@@ -743,7 +752,7 @@ textarea {
   }
 
   .pesan textarea {
-    width: 400px;
+    width: 100%;
     border: none;
     background: #d3d3d3;
     height: 140px;
@@ -753,8 +762,26 @@ textarea {
 }
 @media screen and (max-width: 500px) {
   .contact {
-    margin-left: 16px;
+    margin: 16px;
+    width: 100%;
+  }
+
+  textarea {
+    border: none;
+    background: #d3d3d3;
+    height: 46px;
+    width: 130%;
+    line-height: 3;
+
     margin-right: 16px;
+  }
+  .pesan textarea {
+    width: 130%;
+    border: none;
+    background: #d3d3d3;
+    height: 100%;
+    padding-left: 10px;
+    line-height: 3;
   }
   .isi_contact {
     display: grid;
@@ -767,11 +794,14 @@ textarea {
 
   .lokasi {
     grid-area: 1 / 1 / 2 / 3;
+    width: 100%;
   }
   .lokasi iframe {
     margin-right: 16px;
-    width: 425px;
-    height: 250px;
+    display: flex;
+    aspect-ratio: 16/9;
+    width: 130%;
+    height: 100%;
   }
   .alamat {
     grid-area: 2 / 1 / 3 / 3;
@@ -911,4 +941,43 @@ footer {
   font-size: 12px;
   font-weight: 200;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* responsif footer */
+
+@media screen and (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+  .respon {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo_foot {
+    display: flex;
+    flex-direction: column;
+  }
+  .respon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .information {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .kontak {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .copyright {
+    display: flex;
+    width: 500px;
+  }
+  iframe {
+    width: 288px;
+    height: 150px;
+  }
 }
