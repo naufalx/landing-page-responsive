@@ -361,6 +361,7 @@ mision span {
   margin-right: 135px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .isi-mision span {
   font-size: 160px;
@@ -397,26 +398,28 @@ mision span {
   }
   .isi-mision {
     display: flex;
-    gap: 100px;
-    justify-content: center;
+
+    justify-content: space-between;
     margin: 32px 16px 32px 16px;
   }
   .misi_1 span {
-    font-size: 64px;
+    margin-right: 6%;
+    font-size: 600%;
   }
 
   .isi-mision .misi_1 p {
-    font-size: 11px;
+    font-size: 100%;
   }
   .misi_2 {
     padding: 0;
   }
   .misi_2 span {
-    font-size: 64px;
+    font-size: 600%;
+    margin-right: 6%;
   }
 
   .isi-mision .misi_2 p {
-    font-size: 11px;
+    font-size: 100%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -664,7 +667,7 @@ textarea {
   height: 369px;
 }
 .alamat {
-  grid-area: 7 / 2 / 8 / 3;
+  /* grid-area: 7 / 2 / 8 / 3; */
   line-height: 0.9;
   margin-top: 10px;
   width: 280px;
@@ -680,7 +683,7 @@ textarea {
   word-spacing: 1px;
 }
 .alamat_email {
-  grid-area: 7 / 3 / 8 / 4;
+  /* grid-area: 7 / 3 / 8 / 4; */
   line-height: 0.9;
   margin-top: 10px;
   width: 280px;
@@ -696,7 +699,7 @@ textarea {
 }
 
 .nomer {
-  grid-area: 7 / 4 / 8 / 5;
+  /* grid-area: 7 / 4 / 8 / 5; */
   line-height: 0.9;
   margin-top: 10px;
   width: 280px;
@@ -718,8 +721,52 @@ textarea {
 @media screen and (max-width: 1100px) {
   .contact {
     margin: 16px;
-    max-width: 1100px;
     width: 100%;
+  }
+  .bawah_maps {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    gap: 10%;
+  }
+  .lokasi {
+    width: 90%;
+    height: 96%;
+    margin-right: 16px;
+  }
+  .lokasi iframe {
+    margin-right: 16px;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .alamat {
+    /* grid-area: 7 / 2 / 8 / 3; */
+    line-height: 0.9;
+    margin-top: 10px;
+    width: 100%;
+  }
+  textarea {
+    width: 360px;
+    border: none;
+    background: #d3d3d3;
+    height: 46px;
+    line-height: 3;
+    padding-left: 10px;
+  }
+  .bawah_maps {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+  /* .isi_contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+
+    margin-right: 16px;
   }
   .text_contact h1 {
     font-weight: 200;
@@ -730,7 +777,8 @@ textarea {
     font-weight: 700;
   }
   .lokasi {
-    width: 100%;
+    width: 120%;
+    height: 96%;
     margin-right: 16px;
   }
   .lokasi iframe {
@@ -739,8 +787,12 @@ textarea {
     height: 100%;
   }
   .bawah_maps {
-    display: none;
+    display: flex;
+    justify-content: left;
     width: 100%;
+  }
+  .nomer {
+    width: 45%;
   }
   textarea {
     width: 100%;
@@ -759,24 +811,41 @@ textarea {
     padding-left: 10px;
     line-height: 3;
   }
+  .tombol {
+    width: 150%;
+    display: flex;
+  }
+  .tombol a {
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    background-color: #333333;
+    padding: 5% 12%;
+  } */
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .contact {
     margin: 16px;
     width: 100%;
+  }
+  .text_contact h1 {
+    font-weight: 200;
+    font-size: 32px;
   }
 
   textarea {
     border: none;
     background: #d3d3d3;
     height: 46px;
-    width: 130%;
+    width: 115%;
     line-height: 3;
 
     margin-right: 16px;
   }
   .pesan textarea {
-    width: 130%;
+    width: 115%;
     border: none;
     background: #d3d3d3;
     height: 100%;
@@ -794,13 +863,13 @@ textarea {
 
   .lokasi {
     grid-area: 1 / 1 / 2 / 3;
-    width: 100%;
+    width: 115%;
   }
   .lokasi iframe {
     margin-right: 16px;
     display: flex;
     aspect-ratio: 16/9;
-    width: 130%;
+    max-width: 100%;
     height: 100%;
   }
   .alamat {
