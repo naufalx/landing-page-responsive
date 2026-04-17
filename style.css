@@ -829,224 +829,208 @@ textarea {
 @media screen and (max-width: 768px) {
   .contact {
     margin: 16px;
+    padding-bottom: 32px;
   }
   .text_contact h1 {
     font-weight: 200;
     font-size: 32px;
   }
 
-  textarea {
-    border: none;
-    background: #d3d3d3;
-    height: 46px;
-    width: 115%;
-    line-height: 3;
-
-    margin-right: 16px;
-  }
-  .pesan textarea {
-    width: 115%;
-    border: none;
-    background: #d3d3d3;
-    height: 100%;
-    padding-left: 10px;
-    line-height: 3;
-  }
   .isi_contact {
     display: grid;
-    flex-direction: column-reverse;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .isi_contact textarea {
+    width: 100%;
+    max-width: 100%;
   }
 
   .lokasi {
-    grid-area: 1 / 1 / 2 / 3;
-    width: 115%;
+    width: 100%;
   }
   .lokasi iframe {
-    margin-right: 16px;
-    display: flex;
-    aspect-ratio: 16/9;
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: 260px;
   }
-  .alamat {
-    grid-area: 2 / 1 / 3 / 3;
-  }
-  .alamat_email {
-    grid-area: 3 / 1 / 4 / 2;
-  }
-  .nomer {
-    grid-area: 3 / 2 / 4 / 3;
-  }
+
   .bawah_maps {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
-  .nama {
-    grid-area: 4 / 1 / 5 / 3;
-  }
-  .nomor {
-    grid-area: 5 / 1 / 6 / 3;
-  }
-  .email {
-    grid-area: 6 / 1 / 7 / 3;
-  }
-  .interest {
-    grid-area: 7 / 1 / 8 / 3;
-  }
-  .pesan {
-    grid-area: 8 / 1 / 9 / 3;
-  }
-  .tombol {
-    grid-area: 9 / 1 / 10 / 3;
+  .bawah_maps .alamat,
+  .bawah_maps .alamat_email,
+  .bawah_maps .nomer {
+    width: 100%;
   }
 }
 /* footer */
 footer {
-  display: flex;
+  display: grid; 
+  grid-template-columns: minmax(280px, 1fr) minmax(260px, 1fr) minmax(360px, 1.4fr);
+  align-items: start;
   gap: 40px;
-  color: #ffff;
+  color: #ffffff;
   background-color: #333333;
-  padding-top: 60px;
-  padding-bottom: 38px;
+  padding: 60px 24px 38px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 .logo_foot {
-  margin-left: 135px;
+  margin: 0;
+  max-width: 360px;
 }
 .logo_foot img {
-  width: 145px;
-  height: 94px;
+  width: 140px;
+  height: auto;
+  object-fit: contain;
 }
 .logo_foot p {
-  font-family: "roboto";
-  font-size: 12px;
-  margin-bottom: 18px;
-
-  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 24px 0 18px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #d9d9d9;
+  max-width: 360px;
 }
 .icon {
-  width: 203px;
-  height: 20px;
   display: flex;
-  gap: 24px;
+  gap: 18px;
+  align-items: center;
 }
 .logo_foot .icon i {
-  width: 10px;
-  height: 19px;
-}
-.information h1 {
   font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 24px;
+  color: #ffffff;
+}
+.respon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.information,
+.kontak {
+  min-width: 0;
+}
+.information h1,
+.kontak h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.information ul,
+.kontak ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .information ul li {
   font-size: 14px;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: #ffff;
-  letter-spacing: 2px;
-  line-height: 2;
-  font-weight: 200;
-}
-.information ul {
-  gap: 60px;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.kontak h1 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 24px;
-}
-.kontak i {
-  margin-top: 8px;
-  margin-right: 8px;
+  color: #d9d9d9;
+  letter-spacing: 0.02em;
+  line-height: 2.2;
+  font-weight: 300;
 }
 .kontak ul li {
-  font-size: medium;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: rgb(255, 255, 255);
-  letter-spacing: 2px;
-  line-height: 2;
+  font-size: 14px;
+  color: #d9d9d9;
+  letter-spacing: 0.02em;
+  line-height: 2.2;
   display: flex;
   align-items: flex-start;
-
-  font-weight: 200;
+  font-weight: 300;
 }
-.kontak ul {
-  gap: 60px;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
+.kontak i {
+  margin-top: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #ffffff;
 }
 .map_footer iframe {
-  width: 570px;
-  margin-right: 135px;
+  width: 100%;
+  height: 260px;
+  border: 0;
+  border-radius: 24px;
 }
 .copyright {
   background-color: #333333;
 }
 .copy {
   background-color: #333333;
-
   box-sizing: border-box;
-  gap: 38px;
-  border-top: 1px solid #d8d8d8;
-  width: 1170px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  width: min(1170px, 100%);
   align-items: center;
   margin: auto;
-  padding-top: 38px;
-  padding-bottom: 22px;
+  padding: 24px 20px;
 }
 .copy h1 {
-  color: #ffff;
-  display: flex;
-  justify-content: center;
+  color: #b3b3b3;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
 }
-/* responsif footer */
+
+/* responsive footer */
+@media screen and (max-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 40px 24px 32px;
+  }
+  .map_footer {
+    grid-column: 1 / -1;
+  }
+  .map_footer iframe {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    padding: 32px 20px 24px;
+  }
+  .respon {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .information,
+  .kontak,
+  .logo_foot,
+  .map_footer {
+    width: 100%;
+  }
+  .logo_foot,
+  .information,
+  .kontak {
+    text-align: center;
+  }
+  .kontak ul li {
+    justify-content: center;
+  }
+  .copy {
+    padding: 20px 16px;
+  }
+}
 
 @media screen and (max-width: 500px) {
   footer {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
+    gap: 24px;
+    padding: 24px 16px 20px;
   }
-  .respon {
-    display: flex;
-    flex-direction: row;
+  .icon {
+    justify-content: center;
   }
-  .logo_foot {
-    display: flex;
-    flex-direction: column;
+  .information h1,
+  .kontak h1 {
+    font-size: 18px;
   }
-  .respon {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-
-  .information {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  .kontak {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-  .copyright {
-    display: flex;
-    width: 500px;
-  }
-  iframe {
-    width: 288px;
-    height: 150px;
+  .map_footer iframe {
+    height: 200px;
   }
 }
+
